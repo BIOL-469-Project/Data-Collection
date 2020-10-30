@@ -1,11 +1,56 @@
 ### installing commandline ncbi dataset tool
 curl -o datasets 'https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/LATEST/mac/datasets'
 
+
 ### allowing permission 
 chmod +x datasets
+
 
 ### options and tools of datasets 
 ./datasets --help
 
+
 ### download all sars-covid-19 genome sequences deposited since January 1 2020 
 ./datasets download virus genome taxon 2697049 --released-since 01/01/2020 --filename SARS2-all-040120.zip
+
+
+### downloading datasets based on WHO's dashboard of the countries with the most Covid-19 cases - not in particular order
+
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in France only
+./datasets download virus genome taxon SARS2 --host human --geo-location France --filename SARS2-hum-France.zip
+
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in China only 
+./datasets download virus genome taxon SARS2 --host human --geo-location China --filename SARS2-hum-China.zip
+
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in USA only 
+./datasets download virus genome taxon SARS2 --host human --geo-location USA --filename SARS2-hum-USA.zip
+
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in Canada only 
+./datasets download virus genome taxon SARS2 --host human --geo-location Canada --filename SARS2-hum-Canada.zip
+
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in Brazil only 
+./datasets download virus genome taxon SARS2 --host human --geo-location Brazil --filename SARS2-hum-Brazil.zip
+
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in India only 
+./datasets download virus genome taxon SARS2 --host human --geo-location India --filename SARS2-hum-India.zip
+
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in South Africa only 
+./datasets download virus genome taxon SARS2 --host human --geo-location SA --filename SARS2-hum-SA.zip
+
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in Argentina only 
+./datasets download virus genome taxon SARS2 --host human --geo-location Argentina --filename SARS2-hum-Argentina.zip
+
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in Peru only 
+./datasets download virus genome taxon SARS2 --host human --geo-location Peru --filename SARS2-hum-Peru.zip
+
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in Columbia only 
+./datasets download virus genome taxon SARS2 --host human --geo-location Columbia --filename SARS2-hum-Columbia.zip
+
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in Mexico only 
+./datasets download virus genome taxon SARS2 --host human --geo-location Mexico --filename SARS2-hum-Mexico.zip
+
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in United Kingdom only 
+./datasets download virus genome taxon SARS2 --host human --geo-location UK --filename SARS2-hum-UK.zip
+
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in Spain only 
+./datasets download virus genome taxon SARS2 --host human --geo-location Spain --filename SARS2-hum-Spain.zip
