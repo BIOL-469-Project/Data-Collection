@@ -1,0 +1,11 @@
+### installing commandline ncbi dataset tool
+curl -o datasets 'https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/LATEST/mac/datasets'
+
+### allowing permission 
+chmod +x datasets
+
+### options and tools of datasets 
+./datasets --help
+
+### download all sars-covid-19 genome sequences deposited since January 1 2020 
+./datasets download virus genome taxon 2697049 --released-since 01/01/2020 --filename SARS2-all-040120.zip
