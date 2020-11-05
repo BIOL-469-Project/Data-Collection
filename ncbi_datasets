@@ -55,6 +55,12 @@ chmod +x datasets
 ### download all sars-covid-19 genome sequences for viruses isolated from human hosts in Spain only 
 ./datasets download virus genome taxon SARS2 --host human --geo-location Spain --filename SARS2-hum-Spain.zip
 
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in Russia only 
+./datasets download virus genome taxon SARS2 --host human --geo-location Russia --filename SARS2-hum-Russia.zip
+
+### download all sars-covid-19 genome sequences for viruses isolated from human hosts in Italy only 
+./datasets download virus genome taxon SARS2 --host human --geo-location Italy --filename SARS2-hum-Italy.zip
+
 
 ### download all sars-covid-19 genome sequences for viruses isolated from human hosts in Asia
 ./datasets download virus genome taxon SARS2 --host human --geo-location Asia --filename SARS2-hum-Asia.zip
